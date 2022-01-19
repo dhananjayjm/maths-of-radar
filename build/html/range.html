@@ -1,0 +1,135 @@
+
+
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Range or distance measurement &#8212; Mathematics of RADAR 1.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The basic radar equation" href="RadarEquation.html" />
+    <link rel="prev" title="Welcome to Mathematics of RADAR!" href="index.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="RadarEquation.html" title="The basic radar equation"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Mathematics of RADAR!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Mathematics of RADAR 1.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Range or distance measurement</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="range-or-distance-measurement">
+<span id="range"></span><h1>Range or distance measurement<a class="headerlink" href="#range-or-distance-measurement" title="Permalink to this headline">¶</a></h1>
+<p>The radar transmits a short radio pulse with very high pulse power. This pulse is focused in one direction only by the directivity of the antenna, and propagates in this given direction with the speed of light.</p>
+<p>If in this direction is an obstacle, for example an airplane, then a part of the energy of the pulse is scattered in all directions. A very small portion is also reflected back to the radar. The radar antenna receives this energy and the radar evaluates the contained information.</p>
+<p>The distance we can measure with a simple oscilloscope. On the oscilloscope moves synchronously with the transmitted pulse a luminous point and leaves a trail. The deflection starts with the transmitter pulse. The luminescent spot moves to scale on the oscilloscope with the radio wave. At this moment, in which the antenna receives the echo pulse, this pulse is also shown on the oscilloscope. The distance between the two shown pulses on the oscilloscope is a measure of the distance of the aircraft.</p>
+<p>Since the propagation of radio waves happens at constant speed (the speed of light <span class="math notranslate nohighlight">\(c_{0}\)</span>) this distance is determined from the runtime of the high-frequency transmitted signal. The actual range of a target from the radar is known as slant range. Slant range is the line of sight distance between the radar and the object illuminated. While ground range is the horizontal distance between the emitter and its target and its calculation requires knowledge of the target’s elevation. Since the waves travel to a target and back, the round trip time is dividing by two in order to obtain the time the wave took to reach the target. Therefore the following formula arises for the slant range,</p>
+<div class="math notranslate nohighlight">
+\[R = \frac{c_0~t}{2}\]</div>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(c_{0}=\)</span> speed of light = <span class="math notranslate nohighlight">\(3 \times 10^{8}~\text{m s}^{-1}\)</span>,</div>
+</div>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(t=\)</span> measured runtime [s],</div>
+</div>
+<div class="line-block">
+<div class="line"><span class="math notranslate nohighlight">\(R=\)</span> slant range antenna - aim [m]</div>
+</div>
+<p><strong>Derivation of the equation</strong></p>
+<p><strong>Range</strong> is the distance from the radar site to the target measured along the line of sight.</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}v = \frac{s}{t} \\\end{split}\\
+c_{0} = \frac{2R}{t}\end{aligned}\end{align} \]</div>
+<p>The factor of two in the equation comes from the observation that the radar pulse must travel to the target and back before detection, or twice the range.</p>
+<div class="math notranslate nohighlight">
+\[R = \frac{c_0~t}{2}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(c_{0}=3 \times 10^{8}~\text{m s}^{-1}\)</span>, is the speed of light at which all electromagnetic waves propagate.</p>
+<p>If the respective running <strong>time</strong> <span class="math notranslate nohighlight">\(t\)</span> is known, then the <strong>distance</strong> <span class="math notranslate nohighlight">\(R\)</span> between a target and the radar set can be calculated by using this equation.</p>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Mathematics of RADAR!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="RadarEquation.html"
+                        title="next chapter">The basic radar equation</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/range.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="RadarEquation.html" title="The basic radar equation"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Mathematics of RADAR!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Mathematics of RADAR 1.0.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Range or distance measurement</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Dhananjay Mandalkar, copywrite Christian Wolff, https://www.radartutorial.eu.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.3.2.
+    </div>
+  </body>
+</html>
